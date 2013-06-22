@@ -5,7 +5,7 @@ hello = {
     "halløj" : "danish",
     "hæ"     : "icelandic",
     "xin"    : "vietnamese",
-    "¡"      : "spanish",
+    "¡hola"  : "spanish",
     "안녕"   : "korean",
     "Γεια"   : "greek",
     "नमस्ते"   : "hindi",
