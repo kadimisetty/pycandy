@@ -1,5 +1,6 @@
+#! /usr/bin/env python
+
 # Say Hello in different languages
-#coding=utf-8
 
 hello = {
     "halløj" : "danish",
