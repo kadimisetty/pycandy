@@ -2,11 +2,21 @@
 # vim: set fileencoding=utf-8:
 
 
-def main():
-    pass
+hello = {
+    "halløj" : "danish",
+    "hæ"     : "icelandic",
+    "xin"    : "vietnamese",
+    "¡"      : "spanish",
+    "안녕"   : "korean",
+    "Γεια"   : "greek",
+    "नमस्ते"   : "hindi",
+    "నమస్తే"   : "telugu",
+    }
 
-if __name__ == "__main__":
-    main()
+# from subprocess import call
+from pprint import pprint
+
+pprint(hello)
 
 # Emacs
 # -*- coding: utf-8 -*-

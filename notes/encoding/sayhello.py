@@ -1,4 +1,5 @@
 # Say Hello in different languages
+#coding=utf-8
 
 hello = {
     "halløj" : "danish",
@@ -11,7 +12,7 @@ hello = {
     "నమస్తే"   : "telugu",
     }
 
-# from subprocess import call
-from pprint import pprint
+import getpass
+username = getpass.getuser()
 
-pprint(hello)
+print(['{} {}'.format(k, username) for k in hello.keys()])
