@@ -1,6 +1,5 @@
 #! /usr/bin/env python
 
-# Say Hello in different languages
 
 hello = {
     "halløj" : "danish",
@@ -13,7 +12,7 @@ hello = {
     "నమస్తే"   : "telugu",
     }
 
+# Greet user in different languages
 import getpass
 username = getpass.getuser()
-
 print(['{} {}'.format(k, username) for k in hello.keys()])
