@@ -2,17 +2,13 @@
 
 
 hello = {
-    "halløj" : "danish",
-    "hæ"     : "icelandic",
-    "xin"    : "vietnamese",
-    "¡hola"  : "spanish",
-    "안녕"   : "korean",
-    "Γεια"   : "greek",
-    "नमस्ते"   : "hindi",
-    "నమస్తే"   : "telugu",
+    "hæ"   : "icelandic",
+    "xin"  : "vietnamese",
+    "Γεια" : "greek",
+    "नमस्ते" : "hindi",
+    "నమస్తే" : "telugu",
+    "안녕" : "korean",
     }
 
-# Greet user in different languages
 import getpass
-username = getpass.getuser()
-print(['{} {}'.format(k, username) for k in hello.keys()])
+print(['{} {}'.format(k, getpass.getuser()) for k in hello.keys()])
