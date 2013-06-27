@@ -1,7 +1,7 @@
-@main-bg-color: darken(#215b8f, 4%);
+@main-bg-color: lighten(#215b8f, 8%);
 @main-color: #fff;
 @info-color: #7FA1BF;
-@info-bg-color: darken(#296295, 4%);
+@info-bg-color: lighten(#296295, 5%);
 @logo: "../img/masthead-logo.png";
 
 @title-font: economica, 'Avenir Next Condensed', 'Helvetica Neue', Helvetica, sans-serif;
@@ -46,9 +46,11 @@ body {
         font-size: 16px;
         font-weight: 100;
         text-align: center;
+        text-transform:uppercase;
     }
 
     #ingredients {
+        text-transform:uppercase;
         border-top: 4px solid fade(@info-color, 50%);
         padding-top: 5px;
 
@@ -57,7 +59,7 @@ body {
             margin-top: 0;
 
             em {
-                font-weight: 700;
+                font-weight: 900;
             }
         }
     }
