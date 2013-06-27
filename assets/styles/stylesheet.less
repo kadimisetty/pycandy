@@ -8,7 +8,7 @@
 // Fonts
 @title-font: economica, 'Avenir Next Condensed', 'Helvetica Neue', Helvetica, sans-serif;
 // @para-font: gentium-basic, 'Times New Roman', Palatino, serif;
-@para-font: Georgia, gentium-basic, 'Times New Roman', Palatino, serif;
+@para-font: Georgia, 'Times New Roman', Palatino, serif;
 
 // Styles
 body {
@@ -36,9 +36,9 @@ body {
     text-align: center;
     font-family: @title-font;
     background-color: @info-bg-color;
-    font-size: 14px;
+    font-size: 16px;
     margin: 40px auto 20px auto;
-    width: 320px;
+    width: 360px;
     color: @info-color;
 
     h2 {
@@ -116,6 +116,10 @@ body {
     text-align: center;
 
     a {
+
+        //Ths line is for pre 7 IE only, because it keeps showing default a colors
+        color: @info-color;
+
         color: fade(@main-color, 50%); 
         text-decoration: none;
         border-bottom: 1px solid fade(@main-color, 40%);
