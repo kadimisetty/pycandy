@@ -1,9 +1,9 @@
 #! /usr/bin/env python
+# vim: set fileencoding=utf-8:
 
 
 hello = {
     "hæ"   : "icelandic",
-    "xin"  : "vietnamese",
     "Γεια" : "greek",
     "नमस्ते" : "hindi",
     "నమస్తే" : "telugu",
