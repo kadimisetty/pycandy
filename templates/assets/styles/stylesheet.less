@@ -1,0 +1,139 @@
+// Colors
+@main-bg-color: lighten(#215b8f, 8%);
+@main-color: #fff;
+@info-color: #7FA1BF;
+@info-bg-color: lighten(#296295, 5%);
+@logo: "../img/masthead-logo.png";
+
+// Fonts
+@title-font: economica, 'Avenir Next Condensed', 'Helvetica Neue', Helvetica, sans-serif;
+// @para-font: gentium-basic, 'Times New Roman', Palatino, serif;
+@para-font: Georgia, 'Times New Roman', Palatino, serif;
+
+// Styles
+body {
+    margin: auto;
+    width: 650px;
+    background-color: @main-bg-color;
+    color: @main-color;
+    font-family: @para-font;
+    font-weight: Normal;
+}
+
+
+#titleheader { margin-top: 80px; }
+
+#masthead a{
+    display: block;
+    width: 100px;
+    height: 80px;
+    margin: 0 auto 0px auto;
+    background-image: url("@{logo}");
+    background-repeat: no-repeat;
+}
+
+#infobox {
+    text-align: center;
+    font-family: @title-font;
+    background-color: @info-bg-color;
+    font-size: 16px;
+    margin: 40px auto 20px auto;
+    width: 360px;
+    color: @info-color;
+
+    h2 {
+        padding: none;
+        margin: none;
+        font-size: 16px;
+        font-weight: 100;
+        text-align: center;
+        text-transform:uppercase;
+    }
+
+    #ingredients {
+        text-transform:uppercase;
+        // border-bottom: 4px solid fade(@info-color, 50%);
+        padding-top: 5px;
+
+        p {
+            padding-top:0;
+            margin-top: 0;
+
+            em {
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+#searchbox {
+    display: none;
+    margin: auto;
+    text-align: center;
+
+    input[type="search"] {
+        font-size: 16px;
+        background-color: #215b85;
+        color: #777;
+        width: 200px;
+        opacity: 0.3;
+    }
+    input[type="search"]:focus { opacity: 1.0; }
+}
+
+
+
+
+#content {
+    font-family: @para-font;
+    margin-top: 60px;
+    text-align: center;
+
+    h3 {
+        font-family: @title-font;
+        color: fade(@main-color, 30%);
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    .player {
+        padding-top: 20px;
+    }
+    .month { margin-bottom: 40px; }
+    a { 
+        color: fade(@main-color, 80%); 
+        text-decoration: none;
+        border-bottom: 1px solid fade(@main-color, 60%);
+    }
+    a:hover{ color: fade(@main-color, 100%); }
+}
+
+#footer {
+    text-transform: uppercase;
+    margin: 80px auto;
+    font-family:@title-font;
+    font-size: 14px;
+    text-align: center;
+
+    a {
+
+        //Ths line is for pre 7 IE only, because it keeps showing default a colors
+        color: @info-color;
+
+        color: fade(@main-color, 50%); 
+        text-decoration: none;
+        border-bottom: 1px solid fade(@main-color, 40%);
+    }
+    a:hover { color: fade(@main-color, 80%); }
+}
+
+// Utilities
+.clear {
+    clear: both;
+}
+
+.hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
