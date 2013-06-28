@@ -39,9 +39,9 @@ Emacs style "modelines"
 
 ### Vim
 * `:help bomb` - BOMs
-* `:help modeline` - Toggle modeline recognition in vim
 * `:help modeline` Modelines
-* `:help modelines` - Number of lines to checkfor the modeline
+* `:help 'modeline'` - Toggle modeline recognition in vim
+* `:help modelines` - Number of lines to check for a modeline
 
 ## Further Information
 * [7-bit ASCII](http://en.wikipedia.org/wiki/ASCII#7-bit)
