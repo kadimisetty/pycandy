@@ -1,5 +1,15 @@
 # Encoding Specifiers 1
 
+## Ways to specify encoding
+1. Default
+2. Magic Line
+3. BOM
+
+
+## Five Facts of Life Excerpt
+
+4. You cannot infer the encoding of bytes.
+5. Declared Encodings might be wrong.
 
 ## Notes
 Pattern `coding=<encoding name>`.  Example:
@@ -49,6 +59,7 @@ Emacs style "modelines"
 
 
 ## Further Information
+* [Pragmatic Unicode](http://nedbatchelder.com/text/unipain.html)
 * [7-bit ASCII](http://en.wikipedia.org/wiki/ASCII#7-bit)
 * [BOM & UTF-8](http://en.wikipedia.org/wiki/UTF-8#Byte_order_mark)
 * [Modeline Magic](http://vim.wikia.com/wiki/Modeline_magic)

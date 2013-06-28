@@ -1,12 +1,15 @@
 #! /usr/bin/env python
+#coding=utf-8
 
 
 hello = {
-    "hæ"   : "icelandic",
-    "नमस्ते" : "hindi",
-    "నమస్తే" : "telugu",
-    "안녕" : "korean",
+        'icelandic':  'hæ',
+        'hindi':      'नमस्ते',
+        'telugu':     'నమస్తే',
+        'korean':     '안녕'
     }
 
 import getpass
-print(['{} {}'.format(k, getpass.getuser()) for k in hello.keys()])
+print(['{} {}'.format(k, getpass.getuser()) for k in hello.values()])
+
+안녕
