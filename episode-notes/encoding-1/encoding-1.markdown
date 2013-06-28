@@ -4,15 +4,19 @@
 ## Notes
 Pattern `coding=<encoding name>`. 
 Example     
+
     #coding=utf-8
 
 The regular expression
+
     coding[:=]\s*([-\w.]+)"
 
 Vim style modelines
+
     # vim: set fileencoding=utf-8:
 
 Emacs style "modelines"
+
     # -*- coding: <encoding name> -*-
     # -*- coding: latin-1 -*-
 
