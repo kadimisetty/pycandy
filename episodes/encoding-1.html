@@ -38,18 +38,99 @@
     </div><!-- END titleheader -->
 
     <div id="content">
+      <!-- BEGIN ARTICLE-->
       <div id="article">
 
-        <h1>Some text goes here</h1>
-        <p>Some paragraph goes here.</p>
+        <iframe src="http://player.vimeo.com/video/69338685" width="500" height="370" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-<pre><code>
-int some=0;
-some++;
-cout << some;
+        <h1 >Encoding Specifiers</h1>
+
+        <h2>Notes</h2>
+        <h3>Ways to specify encoding</h2>
+        <ol>
+          <li>Default</li>
+          <li>Magic Line</li>
+          <li>BOM</li>
+        </ol>
+
+
+        <h3>Requirements</h3>
+        <ul>
+          <li>Encoding should be known to python</li>
+          <li>Should not contain another statment</li>
+          <li>Should be specified within the first two lines</li>
+        </ul>
+
+        <h3>Pattern</h3>
+<pre><code>coding=&lt;encoding name&gt;
+#coding=utf-8
 </code></pre>
 
+        <p>The regular expression:</p>
+
+<pre><code>coding[:=]\s*([-\w.]+)"
+</code></pre>
+
+        <p>Vim style modelines:</p>
+
+<pre><code># vim: set fileencoding=utf-8:
+</code></pre>
+
+        <p>Emacs style “modelines”</p>
+
+<pre><code># -*- coding: &lt;encoding name&gt; -*-
+</code></pre>
+
+        <h3>Five Facts of Life Excerpt</h3>
+
+        <ul>
+          <li>You cannot infer the encoding of bytes.</li>
+          <li>Declared Encodings might be wrong.</li>
+        </ul>
+
+        <h2>Relevant Documentation</h2>
+        <h3>Python</h3>
+        <ul>
+          <li><a href="http://docs.python.org/3/howto/unicode.html">Python UNICODE howto</a></li>
+          <li><a href="http://docs.python.org/release/3.0.1/whatsnew/3.0.html#text-vs-data-instead-of-unicode-vs-8-bit">Text Vs. Data Instead Of Unicode Vs. 8-bit</a></li>
+          <li><a href="http://docs.python.org/3.3/library/codecs.html#standard-encodings">3.3 - Standard Encodings</a></li>
+          <li><a href="http://docs.python.org/2.7/reference/lexical_analysis.html#lexical-analysis">2.7 Lexical analysis - 7-bit ASCII</a></li>
+          <li><a href="http://docs.python.org/3.3/reference/lexical_analysis.html#lexical-analysis">3.3 Lexical analysis - UTF-8</a></li>
+          <li><a href="http://docs.python.org/3.3/reference/lexical_analysis.html#encoding-declarations">3.3 Encoding declarations</a></li>
+      </ul>
+
+        <h3>PEPs</h3>
+        <ul>
+          <li><a href="http://www.python.org/dev/peps/">0 - Index of Python Enhancement Proposals</a></li>
+          <li><a href="http://www.python.org/dev/peps/pep-0263/">263 - Defining Python Source Code Encodings</a></li>
+          <li><a href="http://www.python.org/dev/peps/pep-3120/#specification">3120 - Using UTF-8 as the default source encoding</a></li>
+          <li><a href="http://www.python.org/dev/peps/pep-3131/">3131 - Supporting Non-ASCII Identifiers</a></li>
+        </ul>
+
+        <h3>Vim</h3>
+        <ul>
+          <li><code>:help bomb</code> - Enabling BOMs</li>
+          <li><code>:help modeline</code> Modelines</li>
+          <li><code>:help 'modeline'</code> - Toggle modeline recognition in vim</li>
+          <li><code>:help modelines</code> - Number of lines to check for a modeline</li>
+        </ul>
+
+        <h2>Further Information</h2>
+        <ul>
+          <li><a href="http://nedbatchelder.com/text/unipain.html">Pragmatic Unicode</a></li>
+          <li><a href="http://en.wikipedia.org/wiki/ASCII#7-bit">7-bit ASCII</a></li>
+          <li><a href="http://en.wikipedia.org/wiki/UTF-8#Byte_order_mark">BOM &amp; UTF-8</a></li>
+          <li><a href="http://vim.wikia.com/wiki/Modeline_magic">Modeline Magic</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Byte_order_mark">BOM</a></li>
+          <li><a href="http://blog.notdot.net/2010/07/Getting-unicode-right-in-Python">Getting Unicode right in Python - Nick’s Blog</a></li>
+          <li><a href="https://github.com/SublimeText/Modelines">Sublime Text Modelines plugin does not confirm to the required regex</a></li>
+          <li><a href="http://www.joelonsoftware.com/articles/Unicode.html">The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets - No Excuses!</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/UTF-8">UTF-8</a></li>
+          <li><a href="http://farmdev.com/talks/unicode/">Unicode in Python, Completely Demistified</a></li>
+        </ul>
+
         </div><!-- END article -->
+        <!-- END ARTICLE --> 
       </div><!-- END content -->
 
 

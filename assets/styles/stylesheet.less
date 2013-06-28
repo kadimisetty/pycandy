@@ -137,3 +137,53 @@ body {
     white-space: nowrap;
     overflow: hidden;
 }
+
+// Articles Styles
+
+#article {
+    margin: 0 auto;
+    width: 500px;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.2;
+    color: fade(@main-color, 70%);
+
+    text-align: left;
+    h1, h2, h3 {
+        font-family: economica, sans-serif;
+        font-weight: normal;
+        text-transform: uppercase;
+        color: darken(@main-color, 5%);
+    }
+
+    h1 {
+        font-size: 22px;
+        padding: 20px 0 10px 0;
+    }
+
+    h2 {
+        padding-top: 10px;
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+
+    code {
+        background-color: darken(@main-bg-color, 5%);
+        color: darken(@main-color, 10%);
+        padding: 0 5px 0 5px;
+    }
+    pre code {
+        display: block;
+        margin: 10px 0 10px 0;
+        line-height: 1.5;
+        padding: 10px;
+    }
+
+    li {
+        line-height: 24px;
+    }
+}
