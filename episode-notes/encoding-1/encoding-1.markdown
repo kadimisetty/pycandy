@@ -1,9 +1,8 @@
-# Encoding Specifiers
+# Encoding Specifiers 1
 
 
 ## Notes
-Pattern `coding=<encoding name>`. 
-Example     
+Pattern `coding=<encoding name>`.  Example     
 
     #coding=utf-8
 
@@ -31,7 +30,7 @@ Emacs style "modelines"
 ### Python 
 * [Python UNICODE howto](http://docs.python.org/3/howto/unicode.html)
 * [Text Vs. Data Instead Of Unicode Vs. 8-bit](http://docs.python.org/release/3.0.1/whatsnew/3.0.html#text-vs-data-instead-of-unicode-vs-8-bit)
-* [3.3 - Standard Encodinga](http://docs.python.org/3.3/library/codecs.html#standard-encodings)
+* [3.3 - Standard Encodings](http://docs.python.org/3.3/library/codecs.html#standard-encodings)
 * [2.7 Lexical analysis - 7-bit ASCII](http://docs.python.org/2.7/reference/lexical_analysis.html#lexical-analysis)
 * [3.3 Lexical analysis - UTF-8](http://docs.python.org/3.3/reference/lexical_analysis.html#lexical-analysis)
 * [3.3 Encoding declarations](http://docs.python.org/3.3/reference/lexical_analysis.html#encoding-declarations)
