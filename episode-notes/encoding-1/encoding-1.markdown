@@ -55,4 +55,3 @@ Emacs style "modelines"
 * [The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets - No Excuses!](http://www.joelonsoftware.com/articles/Unicode.html)
 * [UTF-8](https://en.wikipedia.org/wiki/UTF-8)
 * [Unicode in Python, Completely Demistified](http://farmdev.com/talks/unicode/)
-* [http://farmdev.com/talks/unicode/](Unicode in Python, Completely Demistified)
