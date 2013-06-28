@@ -3,7 +3,6 @@
 
 hello = {
     "hæ"   : "icelandic",
-    "Γεια" : "greek",
     "नमस्ते" : "hindi",
     "నమస్తే" : "telugu",
     "안녕" : "korean",
