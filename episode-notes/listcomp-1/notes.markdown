@@ -1,5 +1,8 @@
 # List Comprehensions
 
+## Notes
+
+
 [Implemented in different programming languages](http://en.wikipedia.org/wiki/List_comprehension#Examples_in_different_programming_languages)
 
 An example in Haskell:
