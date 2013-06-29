@@ -43,22 +43,22 @@
 
         <iframe src="http://player.vimeo.com/video/69338685" width="500" height="370" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
-        <h1 >Encoding Specifiers</h1>
-
         <h2>Notes</h2>
         <h3>Ways to specify encoding</h2>
         <ol>
-          <li>Default</li>
+          <li>Default Encodings</li>
           <li>Magic Line</li>
-          <li>BOM</li>
+          <li>Using BOM</li>
         </ol>
 
 
-        <h3>Requirements</h3>
+        <h3>The specifier should</h3>
         <ul>
-          <li>Encoding should be known to python</li>
-          <li>Should not contain another statment</li>
-          <li>Should be specified within the first two lines</li>
+          <li>Match the regular expression `coding[:=]\s*([-\w.]+)"`
+</li>
+          <li>use encodings supported by python</li>
+          <li>not have any other statement in the same line</li>
+          <li>be listed in the first two lines</li>
         </ul>
 
         <h3>Pattern</h3>
@@ -81,7 +81,7 @@ coding=utf-8
 <pre><code>-*- coding: &lt;encoding name&gt; -*-
 </code></pre>
 
-        <h3>Five Facts of Life Excerpt</h3>
+        <h3>Excerpt from Five Facts of Life</h3>
 
         <ul>
           <li>You cannot infer the encoding of bytes.</li>
