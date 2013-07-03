@@ -25,8 +25,8 @@
       </div><!-- /header -->
 
       <div id="container"><div id="episode-notes">
-<iframe frameborder='0' height='370' src='http://player.vimeo.com/video/69338685?title=0&amp;byline=0&amp;portrait=0&amp;color=4a8ac2' width='500'> </iframe>
-<h2 id='ways_to_specify_encoding'>Ways to specify encoding</h2>
+<!-- Encoding Specifiers 1 --><iframe frameborder='0' height='370' src='http://player.vimeo.com/video/69338685?title=0&amp;byline=0&amp;portrait=0&amp;color=4a8ac2' width='500'> </iframe>
+<h2 id='ways_python_infers_encoding'>Ways Python infers encoding</h2>
 
 <ol>
 <li>Default Encodings</li>
@@ -51,7 +51,7 @@
 <h2 id='pattern'>Pattern</h2>
 
 <pre><code>coding=&lt;encoding&gt;
-#coding=utf-8</code></pre>
+# coding=utf-8</code></pre>
 
 <p>The regular expression:</p>
 
@@ -59,18 +59,18 @@
 
 <p>Vim style modelines:</p>
 
-<pre><code># vim: set fileencoding=&lt;encoding&gt;:
+<pre><code>vim: set fileencoding=&lt;encoding&gt;:
 # vim: set fileencoding=utf-8:</code></pre>
 
 <p>Emacs style &#8220;modelines&#8221;</p>
 
-<pre><code># -*- coding: &lt;encoding&gt; -*-
+<pre><code>-*- coding: &lt;encoding&gt; -*-
 # -*- coding: latin-1 -*-</code></pre>
 
-<h2 id='excerpt_from_pragmatic_unicode_talk'>Excerpt from Pragmatic Unicode Talk</h2>
+<h2 id='excerpt_from_the_pragmatic_unicode_talk'>Excerpt from the Pragmatic Unicode Talk</h2>
 
 <ul>
-<li>You cannot infer the encoding of bytes.</li>
+<li>You cannot infer the encoding of <em>bytes</em>.</li>
 
 <li>Declared Encodings might be wrong.</li>
 </ul>
@@ -82,11 +82,11 @@
 <ul>
 <li><a href='http://docs.python.org/3/howto/unicode.html'>Python UNICODE howto</a></li>
 
-<li><a href='http://docs.python.org/3.3/library/codecs.html#standard-encodings'>3.3 - Standard Encodings</a></li>
-
 <li><a href='http://docs.python.org/2.7/reference/lexical_analysis.html#lexical-analysis'>2.7 Lexical analysis - 7-bit ASCII</a></li>
 
 <li><a href='http://docs.python.org/3.3/reference/lexical_analysis.html#lexical-analysis'>3.3 Lexical analysis - UTF-8</a></li>
+
+<li><a href='http://docs.python.org/3.3/library/codecs.html#standard-encodings'>3.3 - Standard Encodings</a></li>
 
 <li><a href='http://docs.python.org/3.3/reference/lexical_analysis.html#encoding-declarations'>3.3 Encoding declarations</a></li>
 
@@ -96,7 +96,7 @@
 <h3 id='peps'>PEPs</h3>
 
 <ul>
-<li><a href='http://www.python.org/dev/peps/pep-0263/'>263 - Defining Python Source Code Encodings</a></li>
+<li><a href='http://www.python.org/dev/peps/pep-0263/'>0263 - Defining Python Source Code Encodings</a></li>
 
 <li><a href='http://www.python.org/dev/peps/pep-3120/#specification'>3120 - Using UTF-8 as the default source encoding</a></li>
 

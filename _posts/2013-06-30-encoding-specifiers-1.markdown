@@ -5,9 +5,10 @@ date:   2013-06-30 06:30:01
 tags: python vim
 ---
 
+<!-- Encoding Specifiers 1 -->
 <iframe src="http://player.vimeo.com/video/69338685?title=0&amp;byline=0&amp;portrait=0&amp;color=4a8ac2" width="500" height="370" frameborder="0"> </iframe>
 
-## Ways to specify encoding
+## Ways Python infers encoding
 1. Default Encodings
 2. Magic Line
 3. Using a BOM
@@ -32,32 +33,32 @@ The regular expression:
 
 Vim style modelines:
 
-     vim: set fileencoding=<encoding>:
+    vim: set fileencoding=<encoding>:
     # vim: set fileencoding=utf-8:
 
 Emacs style "modelines"
 
-     -*- coding: <encoding> -*-
+    -*- coding: <encoding> -*-
     # -*- coding: latin-1 -*-
 
 
-## Excerpt from Pragmatic Unicode Talk
+## Excerpt from the Pragmatic Unicode Talk
 
-- You cannot infer the encoding of bytes.
+- You cannot infer the encoding of *bytes*.
 - Declared Encodings might be wrong.
 
 
 ## Relevant Documentation
 ### Python 
 * [Python UNICODE howto](http://docs.python.org/3/howto/unicode.html)
-* [3.3 - Standard Encodings](http://docs.python.org/3.3/library/codecs.html#standard-encodings)
 * [2.7 Lexical analysis - 7-bit ASCII](http://docs.python.org/2.7/reference/lexical_analysis.html#lexical-analysis)
 * [3.3 Lexical analysis - UTF-8](http://docs.python.org/3.3/reference/lexical_analysis.html#lexical-analysis)
+* [3.3 - Standard Encodings](http://docs.python.org/3.3/library/codecs.html#standard-encodings)
 * [3.3 Encoding declarations](http://docs.python.org/3.3/reference/lexical_analysis.html#encoding-declarations)
 * [Text Vs. Data Instead Of Unicode Vs. 8-bit](http://docs.python.org/release/3.0.1/whatsnew/3.0.html#text-vs-data-instead-of-unicode-vs-8-bit)
 
 ### PEPs
-* [263 - Defining Python Source Code Encodings](http://www.python.org/dev/peps/pep-0263/)
+* [0263 - Defining Python Source Code Encodings](http://www.python.org/dev/peps/pep-0263/)
 * [3120 - Using UTF-8 as the default source encoding](http://www.python.org/dev/peps/pep-3120/#specification)
 * [3131 - Supporting Non-ASCII Identifiers](http://www.python.org/dev/peps/pep-3131/)
 
