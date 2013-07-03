@@ -44,7 +44,7 @@ body {
     margin: 0px auto 60px auto;
     width: 340px;
 
-    color: @info-color;
+    color: lighten(@info-color, 5%);
 
     text-align: center;
     font-family: @title-font;
@@ -62,12 +62,13 @@ body {
         padding: 5px;
         text-align: justify;
         text-justify: distribute-all-lines;
-        border: 1px solid fade(@info-color, 60%);
+        color: fade(@info-color, 80%);
+        border: 1px solid fade(@info-color, 30%);
 
         p {
             margin: 0;
             padding-top: 2px;
-            border-top: 4px solid fade(@info-color, 60%);
+            border-top: 4px solid fade(@info-color, 30%);
 
             a {
                 text-decoration: none;
@@ -122,13 +123,20 @@ body {
     font-size: 14px;
     text-align: center;
 
+    p {
+        color: fade(@main-color, 40%); 
+        &:last-child { text-transform:none; }
+    }
+    
+
     a {
-        color: fade(@main-color, 50%); 
+        color: inherit;
         text-decoration: none;
-        border-bottom: 1px solid fade(@main-color, 40%);
+        border-bottom: 1px solid fade(@main-color, 20%);
 
         &:hover { color: fade(@main-color, 80%); }
     }
+
 }
 
 
