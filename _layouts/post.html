@@ -7,5 +7,6 @@ layout: default
 </div><!-- /episode-notes -->
 
 <div id="episode-meta">
-  <p>{{ page.date | date_to_string }}</p>
+  <p> {% for tag in page.tags %} {{ tag }}, {% endfor %}
+  {{ page.date | date: "%d %B &#8217;%y" }}</p>
 </div><!-- /episode-meta -->

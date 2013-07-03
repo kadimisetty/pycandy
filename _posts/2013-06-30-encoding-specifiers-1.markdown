@@ -2,7 +2,7 @@
 layout: post
 title:  "Encoding Specifiers"
 date:   2013-06-30 06:30:01
-categories: python vim
+tags: python vim
 ---
 
 <iframe src="http://player.vimeo.com/video/69338685?title=0&amp;byline=0&amp;portrait=0&amp;color=4a8ac2" width="500" height="370" frameborder="0"> </iframe>
