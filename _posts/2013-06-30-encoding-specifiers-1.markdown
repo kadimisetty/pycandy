@@ -2,7 +2,7 @@
 layout: post
 title:  "Encoding Specifiers"
 date:   2013-06-30 06:30:01
-tags: python vim
+categories: python vim
 ---
 
 <!-- Encoding Specifiers 1 -->

@@ -5,14 +5,16 @@ title: Python flavored screencasts for impatient developers
 
 
 <div id="subheader" class="clear">
-  <p>Python flavored screencasts for impatient developers</p>
-
-  <p>
-  <strong>Ingredients</strong> Python, Vim, tmux,
-  unix &amp; OS X &nbsp; <strong>Warning</strong>
-  may occasionaly contain 3rd party libraries &nbsp;
-  <strong>Host</strong> Sri Kadimisetty
-  </p><!-- /ingredients -->
+  <p>{{ site.description }}</p>
+  <div id="ingredients">
+    <p> <strong>Ingredients</strong> 
+    {% for category in site.categories %}
+      <a href="/{{ category | first | slugize }}/">{{ category | first }}</a>
+    {% endfor %}
+    <strong>Warning</strong> may occasionaly contain
+    3rd party libraries <strong>Host</strong>
+    Sri Kadimisetty </p>
+  </div><!-- /ingredients -->
 </div><!-- /subheader -->
 
 

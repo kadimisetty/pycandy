@@ -42,7 +42,7 @@ body {
 
 #subheader {
     margin: 0px auto 60px auto;
-    width: 360px;
+    width: 340px;
 
     color: @info-color;
 
@@ -53,6 +53,29 @@ body {
     p {
         text-transform:uppercase;
         strong { font-weight: 900;}
+
+    }
+
+    #ingredients {
+        margin: 0 auto;
+        width: 310px;
+        padding: 5px;
+        text-align: justify;
+        text-justify: distribute-all-lines;
+        border: 1px solid fade(@info-color, 60%);
+
+        p {
+            margin: 0;
+            padding-top: 2px;
+            border-top: 4px solid fade(@info-color, 60%);
+
+            a {
+                text-decoration: none;
+                color: lighten(@info-color, 15%);
+
+                &:hover { color: lighten(@info-color, 30%); }
+            }
+        }
     }
 }
 
@@ -65,6 +88,8 @@ body {
 // Episode List
 #episode-list {
     text-align: center;
+
+    font-size: 18px;
 
     .episode-meta {
         text-transform:uppercase;
@@ -165,9 +190,11 @@ body {
     text-align: center;
     color: fade(@main-color, 50%); 
 
-    padding: 5px 20px 0 20px;
-    border-top: 1px solid fade(@main-color, 10%); 
-    display: inline;
+    p {
+        padding: 5px 20px 0 20px;
+        border-top: 1px solid fade(@main-color, 10%); 
+        display: inline;
+    }
 }
 
 
