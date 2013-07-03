@@ -3,7 +3,7 @@
 @main-color: #fff;
 @info-color: #7FA1BF;
 @info-bg-color: lighten(#296295, 5%);
-@logo: "../img/masthead-logo.png";
+@logo: "/assets/img/masthead-logo.png";
 
 // Fonts
 @title-font: economica, 'Avenir Next Condensed', 'Helvetica Neue', Helvetica, sans-serif;
@@ -35,7 +35,7 @@ body {
 #infobox {
     text-align: center;
     font-family: @title-font;
-    background-color: @info-bg-color;
+    // background-color: @info-bg-color;
     font-size: 16px;
     margin: 40px auto 20px auto;
     width: 360px;
@@ -136,4 +136,54 @@ body {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
+}
+
+// Articles Styles
+
+#article {
+    margin: 0 auto;
+    width: 500px;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.2;
+    color: fade(@main-color, 70%);
+
+    text-align: left;
+    h1, h2, h3 {
+        font-family: economica, sans-serif;
+        font-weight: normal;
+        text-transform: uppercase;
+        color: darken(@main-color, 5%);
+    }
+
+    h1 {
+        font-size: 22px;
+        padding: 20px 0 10px 0;
+    }
+
+    h2 {
+        padding-top: 10px;
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+
+    code {
+        background-color: darken(@main-bg-color, 5%);
+        color: darken(@main-color, 10%);
+        padding: 0 5px 0 5px;
+    }
+    pre code {
+        display: block;
+        margin: 10px 0 10px 0;
+        line-height: 1.5;
+        padding: 10px;
+    }
+
+    li {
+        line-height: 24px;
+    }
 }
