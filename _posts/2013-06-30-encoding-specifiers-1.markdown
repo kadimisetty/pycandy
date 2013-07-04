@@ -12,6 +12,8 @@ categories: python vim
 
 ## Ways Python infers encoding
 1. Default Encodings
+    - Python 2.7.x: 7-bit ASCII
+    - Python 3.x: UTF-8
 2. Magic Line
 3. Using a BOM
 
