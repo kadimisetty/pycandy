@@ -8,7 +8,7 @@
 		
 			<item>
 				<title>Encoding Specifiers and Magical Mode Lines</title>
-				<description>&lt;!-- Encoding Specifiers and Magical Mode Lines --&gt;&lt;iframe width='500' frameborder='0' src='http://player.vimeo.com/video/69685215?title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;color=4a8ac2' height='370'&gt; &lt;/iframe&gt;
+				<description>&lt;!-- Encoding Specifiers and Magical Mode Lines --&gt;&lt;iframe frameborder='0' width='500' src='http://player.vimeo.com/video/69685215?title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;color=4a8ac2' height='370'&gt; &lt;/iframe&gt;
 &lt;h2 id='ways_python_infers_encoding'&gt;Ways Python infers encoding&lt;/h2&gt;
 
 &lt;ol&gt;
