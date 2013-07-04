@@ -1,13 +1,14 @@
 ---
 layout: post
-title:  "Encoding Specifiers"
-date:   2013-06-30 06:30:01
-duration: "12"
+title:  "Encoding Specifiers and Magical Mode Lines"
+date:   2013-07-04 06:00:00
+duration: "9"
 categories: python vim
 ---
 
-<!-- Encoding Specifiers 1 -->
-<iframe src="http://player.vimeo.com/video/69338685?title=0&amp;byline=0&amp;portrait=0&amp;color=4a8ac2" width="500" height="370" frameborder="0"> </iframe>
+
+<!-- Encoding Specifiers and Magical Mode Lines -->
+<iframe src="http://player.vimeo.com/video/69685215?title=0&amp;byline=0&amp;portrait=0&amp;color=4a8ac2" width="500" height="370" frameborder="0"> </iframe> 
 
 ## Ways Python infers encoding
 1. Default Encodings

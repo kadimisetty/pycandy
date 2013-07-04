@@ -7,8 +7,8 @@
 		<atom:link href="http://pycandy.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>Encoding Specifiers</title>
-				<description>&lt;!-- Encoding Specifiers 1 --&gt;&lt;iframe frameborder='0' height='370' src='http://player.vimeo.com/video/69338685?title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;color=4a8ac2' width='500'&gt; &lt;/iframe&gt;
+				<title>Encoding Specifiers and Magical Mode Lines</title>
+				<description>&lt;!-- Encoding Specifiers and Magical Mode Lines --&gt;&lt;iframe frameborder='0' height='370' src='http://player.vimeo.com/video/69685215?title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;color=4a8ac2' width='500'&gt; &lt;/iframe&gt;
 &lt;h2 id='ways_python_infers_encoding'&gt;Ways Python infers encoding&lt;/h2&gt;
 
 &lt;ol&gt;
@@ -123,9 +123,9 @@
 
 &lt;li&gt;&lt;a href='http://www.joelonsoftware.com/articles/Unicode.html'&gt;The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets - No Excuses!&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
-				<pubDate>Sun, 30 Jun 2013 01:30:01 -0500</pubDate>
-				<link>http://pycandy.com/2013-06-30/encoding-specifiers-1</link>
-				<guid isPermaLink="true">http://pycandy.com/2013-06-30/encoding-specifiers-1</guid>
+				<pubDate>Thu, 04 Jul 2013 01:00:00 -0500</pubDate>
+				<link>http://pycandy.com/2013-07-04/encoding-specifiers-1</link>
+				<guid isPermaLink="true">http://pycandy.com/2013-07-04/encoding-specifiers-1</guid>
 			</item>
 		
 	</channel>
