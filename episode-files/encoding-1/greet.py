@@ -11,5 +11,3 @@ hello = {
 
 import getpass
 print(['{} {}'.format(k, getpass.getuser()) for k in hello.values()])
-
-안녕
