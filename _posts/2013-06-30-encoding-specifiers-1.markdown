@@ -17,7 +17,7 @@ categories: python vim
 ## The Specifier should
 
 - match the regular expression `coding[:=]\s*([-\w.]+)"`
-- use encodings supported by python
+- use encodings [supported by python](http://docs.python.org/3.3/library/codecs.html#standard-encodings)
 - not have any other statement in the same line
 - be listed in the first two lines
 

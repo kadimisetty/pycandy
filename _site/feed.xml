@@ -24,7 +24,7 @@
 &lt;ul&gt;
 &lt;li&gt;match the regular expression &lt;code&gt;coding[:=]\s*([-\w.]+)&amp;quot;&lt;/code&gt;&lt;/li&gt;
 
-&lt;li&gt;use encodings supported by python&lt;/li&gt;
+&lt;li&gt;use encodings &lt;a href='http://docs.python.org/3.3/library/codecs.html#standard-encodings'&gt;supported by python&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;not have any other statement in the same line&lt;/li&gt;
 
