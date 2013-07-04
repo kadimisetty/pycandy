@@ -7,6 +7,10 @@ layout: default
 </div><!-- /episode-notes -->
 
 <div id="episode-meta">
-  <p> {% for tag in page.tags %} {{ tag }}, {% endfor %}
-  {{ page.date | date: "%d %B &#8217;%y" }}</p>
+  <p> 
+  {{ page.date | date: "%d %B &#8217;%y" }} &middot;
+  {% for category in page.categories %}
+    {{ category }}{% unless forloop.last %}, {% endunless %}
+  {% endfor %}
+  </p>
 </div><!-- /episode-meta -->
