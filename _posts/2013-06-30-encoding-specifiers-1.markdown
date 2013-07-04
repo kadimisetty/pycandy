@@ -42,6 +42,26 @@ Emacs style "modelines"
     -*- coding: <encoding> -*-
     # -*- coding: latin-1 -*-
 
+## Templates in Vim
+Initialise known file formats with a starter templates
+
+    if has("autocmd")
+        autocmd BufNewFile * silent! 0r ~/.vim/templates/template.%:e
+    endif
+
+Examples starter template for a python script
+
+    #!/usr/bin/env python
+    # vim: set fileencoding=utf-8:
+    
+    def main():
+        pass
+
+    if __name__ == '__main__':
+        main()
+
+
+
 
 ## Excerpt from the [Pragmatic Unicode Talk](http://nedbatchelder.com/text/unipain.html)
 

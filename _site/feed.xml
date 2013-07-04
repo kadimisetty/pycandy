@@ -8,7 +8,7 @@
 		
 			<item>
 				<title>Encoding Specifiers and Magical Mode Lines</title>
-				<description>&lt;!-- Encoding Specifiers and Magical Mode Lines --&gt;&lt;iframe frameborder='0' height='370' src='http://player.vimeo.com/video/69685215?title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;color=4a8ac2' width='500'&gt; &lt;/iframe&gt;
+				<description>&lt;!-- Encoding Specifiers and Magical Mode Lines --&gt;&lt;iframe height='370' frameborder='0' src='http://player.vimeo.com/video/69685215?title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;color=4a8ac2' width='500'&gt; &lt;/iframe&gt;
 &lt;h2 id='ways_python_infers_encoding'&gt;Ways Python infers encoding&lt;/h2&gt;
 
 &lt;ol&gt;
@@ -49,6 +49,25 @@
 
 &lt;pre&gt;&lt;code&gt;-*- coding: &amp;lt;encoding&amp;gt; -*-
 # -*- coding: latin-1 -*-&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id='templates_in_vim'&gt;Templates in Vim&lt;/h2&gt;
+
+&lt;p&gt;Initialise known file formats with a starter templates&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;if has(&amp;quot;autocmd&amp;quot;)
+    autocmd BufNewFile * silent! 0r ~/.vim/templates/template.%:e
+endif&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Examples starter template for a python script&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/usr/bin/env python
+# vim: set fileencoding=utf-8:
+
+def main():
+    pass
+
+if __name__ == &amp;#39;__main__&amp;#39;:
+    main()&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id='excerpt_from_the_pragmatic_unicode_talk'&gt;Excerpt from the &lt;a href='http://nedbatchelder.com/text/unipain.html'&gt;Pragmatic Unicode Talk&lt;/a&gt;&lt;/h2&gt;
 
@@ -123,7 +142,7 @@
 
 &lt;li&gt;&lt;a href='http://www.joelonsoftware.com/articles/Unicode.html'&gt;The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets - No Excuses!&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
-				<pubDate>Thu, 04 Jul 2013 01:00:00 -0500</pubDate>
+				<pubDate>Thu, 04 Jul 2013 06:00:00 -0500</pubDate>
 				<link>http://pycandy.com/2013-07-04/encoding-specifiers-1</link>
 				<guid isPermaLink="true">http://pycandy.com/2013-07-04/encoding-specifiers-1</guid>
 			</item>

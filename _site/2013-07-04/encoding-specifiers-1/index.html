@@ -27,7 +27,7 @@
       </div><!-- /header -->
 
       <div id="container"><div id="episode-notes">
-<!-- Encoding Specifiers and Magical Mode Lines --><iframe frameborder='0' height='370' src='http://player.vimeo.com/video/69685215?title=0&amp;byline=0&amp;portrait=0&amp;color=4a8ac2' width='500'> </iframe>
+<!-- Encoding Specifiers and Magical Mode Lines --><iframe height='370' frameborder='0' src='http://player.vimeo.com/video/69685215?title=0&amp;byline=0&amp;portrait=0&amp;color=4a8ac2' width='500'> </iframe>
 <h2 id='ways_python_infers_encoding'>Ways Python infers encoding</h2>
 
 <ol>
@@ -68,6 +68,25 @@
 
 <pre><code>-*- coding: &lt;encoding&gt; -*-
 # -*- coding: latin-1 -*-</code></pre>
+
+<h2 id='templates_in_vim'>Templates in Vim</h2>
+
+<p>Initialise known file formats with a starter templates</p>
+
+<pre><code>if has(&quot;autocmd&quot;)
+    autocmd BufNewFile * silent! 0r ~/.vim/templates/template.%:e
+endif</code></pre>
+
+<p>Examples starter template for a python script</p>
+
+<pre><code>#!/usr/bin/env python
+# vim: set fileencoding=utf-8:
+
+def main():
+    pass
+
+if __name__ == &#39;__main__&#39;:
+    main()</code></pre>
 
 <h2 id='excerpt_from_the_pragmatic_unicode_talk'>Excerpt from the <a href='http://nedbatchelder.com/text/unipain.html'>Pragmatic Unicode Talk</a></h2>
 
