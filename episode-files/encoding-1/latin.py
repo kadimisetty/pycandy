@@ -1,3 +1,4 @@
 #!/usr/bin/env python
+# vim: set fileencoding=latin-1:
 
-print("ci√†o was adopted into Italian from Venetian.")
+print("ci‡o was adopted from Venetian.")
