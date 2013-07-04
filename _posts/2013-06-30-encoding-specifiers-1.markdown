@@ -2,6 +2,7 @@
 layout: post
 title:  "Encoding Specifiers"
 date:   2013-06-30 06:30:01
+duration: "12"
 categories: python vim
 ---
 

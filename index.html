@@ -21,7 +21,7 @@ title: Python flavored screencasts for impatient developers
 <div id="episode-list">
   {% for post in site.posts %}
   <div class="episode">
-    <p class="episode-meta">{{ post.date | date: "%d %B &#8217;%y" }}</p>
+    <p class="episode-meta">{{ post.date | date: "%d %B &#8217;%y" }} &middot; {{ post.duration | append:' min' }} </p>
     <p class="episode-name"><a href="{{ post.url }}">{{ post.title }}</a></p>
   </div> <!-- /episode -->
   {% endfor %}
