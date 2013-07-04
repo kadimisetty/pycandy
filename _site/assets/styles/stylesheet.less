@@ -59,7 +59,7 @@ body {
     #ingredients {
         margin: 0 auto;
         width: 310px;
-        padding: 5px;
+        padding: 8px 5px 5px 5px;
         text-align: justify;
         text-justify: distribute-all-lines;
         color: fade(@info-color, 80%);
@@ -117,7 +117,6 @@ body {
 
 //Footer
 #footer {
-    text-transform: uppercase;
     margin: 80px auto;
     font-family:@title-font;
     font-size: 14px;
@@ -125,9 +124,8 @@ body {
 
     p {
         color: fade(@main-color, 40%); 
-        &:last-child { text-transform:none; }
+        &:first-child { text-transform: uppercase; }
     }
-    
 
     a {
         color: inherit;

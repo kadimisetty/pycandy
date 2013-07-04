@@ -50,7 +50,7 @@
 &lt;pre&gt;&lt;code&gt;-*- coding: &amp;lt;encoding&amp;gt; -*-
 # -*- coding: latin-1 -*-&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id='excerpt_from_the_pragmatic_unicode_talk'&gt;Excerpt from the Pragmatic Unicode Talk&lt;/h2&gt;
+&lt;h2 id='excerpt_from_the_pragmatic_unicode_talk'&gt;Excerpt from the &lt;a href='http://nedbatchelder.com/text/unipain.html'&gt;Pragmatic Unicode Talk&lt;/a&gt;&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;You cannot infer the encoding of &lt;em&gt;bytes&lt;/em&gt;.&lt;/li&gt;
@@ -98,7 +98,7 @@
 &lt;li&gt;&lt;code&gt;:help &amp;#39;modeline&amp;#39;&lt;/code&gt; - Toggle modeline recognition in vim&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id='further_information'&gt;Further Information&lt;/h2&gt;
+&lt;h2 id='further_reading'&gt;Further Reading&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href='https://en.wikipedia.org/wiki/Byte_order_mark'&gt;BOM&lt;/a&gt;&lt;/li&gt;
@@ -112,6 +112,8 @@
 &lt;li&gt;&lt;a href='http://vim.wikia.com/wiki/Modeline_magic'&gt;Modeline Magic&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href='http://nedbatchelder.com/text/unipain.html'&gt;Pragmatic Unicode&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://lucumr.pocoo.org/2013/7/2/the-updated-guide-to-unicode/'&gt;The Updated Guide to Unicode on Python&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href='http://farmdev.com/talks/unicode/'&gt;Unicode in Python, Completely Demistified&lt;/a&gt;&lt;/li&gt;
 
