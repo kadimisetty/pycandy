@@ -7,13 +7,16 @@ title: Python flavored screencasts for impatient developers
 <div id="subheader" class="clear">
   <p>{{ site.description }}</p>
   <div id="ingredients">
+
     <p> <strong>Ingredients</strong> 
     {% for category in site.categories  sort:size order: descending%}
       <a href="/{{ category | first | slugize }}/">{{ category | first }}</a>{% unless forloop.last %}, {% endunless %}
-    {% endfor %} &amp; only the finest baby frogs
-    <strong>Warning</strong> may occasionaly contain
-    3rd party libraries <strong>Host</strong>
-    Sri Kadimisetty </p>
+    {% endfor %} 
+      &amp; only the finest baby frogs
+    <strong>Warning</strong> contains accent.
+    may occasionaly include 3rd party libraries
+    <strong>Host</strong> Sri Kadimisetty </p>
+
   </div><!-- /ingredients -->
 </div><!-- /subheader -->
 
