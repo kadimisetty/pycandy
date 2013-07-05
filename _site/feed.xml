@@ -8,7 +8,7 @@
 		
 			<item>
 				<title>Encoding Specifiers and Magical Mode Lines</title>
-				<description>&lt;!-- Encoding Specifiers and Magical Mode Lines --&gt;&lt;iframe frameborder='0' width='500' src='http://player.vimeo.com/video/69685215?title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;color=4a8ac2' height='370'&gt; &lt;/iframe&gt;
+				<description>&lt;!-- Encoding Specifiers and Magical Mode Lines --&gt;&lt;iframe frameborder='0' height='370' src='http://player.vimeo.com/video/69685215?title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;color=4a8ac2' width='500'&gt; &lt;/iframe&gt;
 &lt;h2 id='ways_python_infers_encoding'&gt;Ways Python infers encoding&lt;/h2&gt;
 
 &lt;ol&gt;
@@ -16,14 +16,14 @@
 &lt;p&gt;Default Encodings&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Python 2.7.x: 7-bit ASCII&lt;/li&gt;
+&lt;li&gt;Python 2.3+ uses 7-bit ASCII&lt;/li&gt;
 
-&lt;li&gt;Python 3.x: UTF-8&lt;/li&gt;
+&lt;li&gt;Python 3+ uses UTF-8&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 
 &lt;li&gt;
-&lt;p&gt;Magic Line&lt;/p&gt;
+&lt;p&gt;Magic Line / Encoding Specifiers&lt;/p&gt;
 &lt;/li&gt;
 
 &lt;li&gt;
@@ -31,14 +31,14 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id='the_specifier_should'&gt;The Specifier should&lt;/h2&gt;
+&lt;h2 id='the_magic_line_or_encoding_specifier_should'&gt;The &amp;#8220;Magic Line&amp;#8221; or Encoding Specifier should&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;match the regular expression &lt;code&gt;coding[:=]\s*([-\w.]+)&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;match the regular expression &lt;code&gt;coding[:=]\s*([-\w.]+)&lt;/code&gt;&lt;/li&gt;
 
 &lt;li&gt;use encodings &lt;a href='http://docs.python.org/3.3/library/codecs.html#standard-encodings'&gt;supported by python&lt;/a&gt;&lt;/li&gt;
 
-&lt;li&gt;not have any other statement in the same line&lt;/li&gt;
+&lt;li&gt;not have other statement in the same line&lt;/li&gt;
 
 &lt;li&gt;be listed in the first two lines&lt;/li&gt;
 &lt;/ul&gt;
@@ -50,7 +50,7 @@
 
 &lt;p&gt;The regular expression:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;coding[:=]\s*([-\w.]+)&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;coding[:=]\s*([-\w.]+)&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Vim style modelines:&lt;/p&gt;
 
@@ -64,13 +64,9 @@
 
 &lt;h2 id='templates_in_vim'&gt;Templates in Vim&lt;/h2&gt;
 
-&lt;p&gt;Initialise known file formats with a starter templates&lt;/p&gt;
+&lt;p&gt;Intialise files with known file formats with starter templates located in &lt;code&gt;~/.vim/templates/&lt;/code&gt; autocmd BufNewFile * silent! 0r ~/.vim/templates/template.%:e&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;if has(&amp;quot;autocmd&amp;quot;)
-    autocmd BufNewFile * silent! 0r ~/.vim/templates/template.%:e
-endif&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Examples starter template for a python script&lt;/p&gt;
+&lt;p&gt;Contents of &lt;code&gt;template.py&lt;/code&gt; located in the starter template directory.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;#!/usr/bin/env python
 # vim: set fileencoding=utf-8:
@@ -122,11 +118,11 @@ if __name__ == &amp;#39;__main__&amp;#39;:
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;:help bomb&lt;/code&gt; - Enabling BOMs&lt;/li&gt;
 
-&lt;li&gt;&lt;code&gt;:help modeline&lt;/code&gt; Modelines&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:help modeline&lt;/code&gt; - Modelines&lt;/li&gt;
 
 &lt;li&gt;&lt;code&gt;:help modelines&lt;/code&gt; - Number of lines to check for a modeline&lt;/li&gt;
 
-&lt;li&gt;&lt;code&gt;:help &amp;#39;modeline&amp;#39;&lt;/code&gt; - Toggle modeline recognition in vim&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:help &amp;#39;modeline&amp;#39;&lt;/code&gt; - Toggle modeline recognition&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id='further_reading'&gt;Further Reading&lt;/h2&gt;
@@ -154,7 +150,7 @@ if __name__ == &amp;#39;__main__&amp;#39;:
 
 &lt;li&gt;&lt;a href='http://www.joelonsoftware.com/articles/Unicode.html'&gt;The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets - No Excuses!&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
-				<pubDate>Thu, 04 Jul 2013 06:00:00 -0500</pubDate>
+				<pubDate>Thu, 04 Jul 2013 01:00:00 -0500</pubDate>
 				<link>http://pycandy.com/2013-07-04/encoding-specifiers-1</link>
 				<guid isPermaLink="true">http://pycandy.com/2013-07-04/encoding-specifiers-1</guid>
 			</item>

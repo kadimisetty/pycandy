@@ -27,7 +27,7 @@
       </div><!-- /header -->
 
       <div id="container"><div id="episode-notes">
-<!-- Encoding Specifiers and Magical Mode Lines --><iframe frameborder='0' width='500' src='http://player.vimeo.com/video/69685215?title=0&amp;byline=0&amp;portrait=0&amp;color=4a8ac2' height='370'> </iframe>
+<!-- Encoding Specifiers and Magical Mode Lines --><iframe frameborder='0' height='370' src='http://player.vimeo.com/video/69685215?title=0&amp;byline=0&amp;portrait=0&amp;color=4a8ac2' width='500'> </iframe>
 <h2 id='ways_python_infers_encoding'>Ways Python infers encoding</h2>
 
 <ol>
@@ -35,14 +35,14 @@
 <p>Default Encodings</p>
 
 <ul>
-<li>Python 2.7.x: 7-bit ASCII</li>
+<li>Python 2.3+ uses 7-bit ASCII</li>
 
-<li>Python 3.x: UTF-8</li>
+<li>Python 3+ uses UTF-8</li>
 </ul>
 </li>
 
 <li>
-<p>Magic Line</p>
+<p>Magic Line / Encoding Specifiers</p>
 </li>
 
 <li>
@@ -50,14 +50,14 @@
 </li>
 </ol>
 
-<h2 id='the_specifier_should'>The Specifier should</h2>
+<h2 id='the_magic_line_or_encoding_specifier_should'>The &#8220;Magic Line&#8221; or Encoding Specifier should</h2>
 
 <ul>
-<li>match the regular expression <code>coding[:=]\s*([-\w.]+)&quot;</code></li>
+<li>match the regular expression <code>coding[:=]\s*([-\w.]+)</code></li>
 
 <li>use encodings <a href='http://docs.python.org/3.3/library/codecs.html#standard-encodings'>supported by python</a></li>
 
-<li>not have any other statement in the same line</li>
+<li>not have other statement in the same line</li>
 
 <li>be listed in the first two lines</li>
 </ul>
@@ -69,7 +69,7 @@
 
 <p>The regular expression:</p>
 
-<pre><code>coding[:=]\s*([-\w.]+)&quot;</code></pre>
+<pre><code>coding[:=]\s*([-\w.]+)</code></pre>
 
 <p>Vim style modelines:</p>
 
@@ -83,13 +83,9 @@
 
 <h2 id='templates_in_vim'>Templates in Vim</h2>
 
-<p>Initialise known file formats with a starter templates</p>
+<p>Intialise files with known file formats with starter templates located in <code>~/.vim/templates/</code> autocmd BufNewFile * silent! 0r ~/.vim/templates/template.%:e</p>
 
-<pre><code>if has(&quot;autocmd&quot;)
-    autocmd BufNewFile * silent! 0r ~/.vim/templates/template.%:e
-endif</code></pre>
-
-<p>Examples starter template for a python script</p>
+<p>Contents of <code>template.py</code> located in the starter template directory.</p>
 
 <pre><code>#!/usr/bin/env python
 # vim: set fileencoding=utf-8:
@@ -141,11 +137,11 @@ if __name__ == &#39;__main__&#39;:
 <ul>
 <li><code>:help bomb</code> - Enabling BOMs</li>
 
-<li><code>:help modeline</code> Modelines</li>
+<li><code>:help modeline</code> - Modelines</li>
 
 <li><code>:help modelines</code> - Number of lines to check for a modeline</li>
 
-<li><code>:help &#39;modeline&#39;</code> - Toggle modeline recognition in vim</li>
+<li><code>:help &#39;modeline&#39;</code> - Toggle modeline recognition</li>
 </ul>
 
 <h2 id='further_reading'>Further Reading</h2>

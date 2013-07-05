@@ -12,16 +12,16 @@ categories: python vim
 
 ## Ways Python infers encoding
 1. Default Encodings
-    - Python 2.7.x: 7-bit ASCII
-    - Python 3.x: UTF-8
-2. Magic Line
+    - Python 2.3+ uses 7-bit ASCII
+    - Python 3+ uses UTF-8
+2. Using a Magic Line / Encoding Specifiers
 3. Using a BOM
 
 
-## The Specifier should
-- match the regular expression `coding[:=]\s*([-\w.]+)"`
+## The "Magic Line" or Encoding Specifier should
+- match the regular expression `coding[:=]\s*([-\w.]+)`
 - use encodings [supported by python](http://docs.python.org/3.3/library/codecs.html#standard-encodings)
-- not have any other statement in the same line
+- not have other statement in the same line
 - be listed in the first two lines
 
 
@@ -32,7 +32,7 @@ categories: python vim
 
 The regular expression:
 
-    coding[:=]\s*([-\w.]+)"
+    coding[:=]\s*([-\w.]+)
 
 Vim style modelines:
 
@@ -45,13 +45,11 @@ Emacs style "modelines"
     # -*- coding: latin-1 -*-
 
 ## Templates in Vim
-Initialise known file formats with a starter templates
+Intialise files of known file formats with starter templates located in `~/.vim/templates/`
 
-    if has("autocmd")
         autocmd BufNewFile * silent! 0r ~/.vim/templates/template.%:e
-    endif
 
-Examples starter template for a python script
+Contents of `template.py` located in the starter template directory.
 
     #!/usr/bin/env python
     # vim: set fileencoding=utf-8:
@@ -61,8 +59,6 @@ Examples starter template for a python script
 
     if __name__ == '__main__':
         main()
-
-
 
 
 ## Excerpt from the [Pragmatic Unicode Talk](http://nedbatchelder.com/text/unipain.html)
@@ -87,9 +83,9 @@ Examples starter template for a python script
 
 ### Vim
 - `:help bomb` - Enabling BOMs
-- `:help modeline` Modelines
+- `:help modeline` - Modelines
 - `:help modelines` - Number of lines to check for a modeline
-- `:help 'modeline'` - Toggle modeline recognition in vim
+- `:help 'modeline'` - Toggle modeline recognition
 
 
 ## Further Reading
