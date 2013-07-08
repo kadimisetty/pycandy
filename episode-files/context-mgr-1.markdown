@@ -1,11 +1,15 @@
 # Context Managers
 
-Context Magers 
-with 
-contextlib
+## Random Notes
+- Context Magers 
+- with 
+- contextlib
 
-decorators
-generators
+## Func Stuff
+- python functions
+- lambda
+- decorators
+- generators
 
 
 
