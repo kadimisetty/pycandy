@@ -1,4 +1,4 @@
-# Unicode Identifiers
+# UNICODE IDENTIFIERS & VIM CONCEAL
 
 ## Topics 
 - Vim conceal
@@ -117,7 +117,18 @@ Python 2
 PEP
 - [PEP 3131 - Supporting Non-ASCII Identifiers](http://www.python.org/dev/peps/pep-3131/)
 
+Vim
+- `:version` - Check if Vim is compiled with the `+conceal` feature
+- `:help conceal`
+- `:help cchar`
+- `:help conceallevel`
+- `:help :syn-arguments`
+
+
 ### Further Reading
 - [Pros and Cons - Stack Exchange](http://programmers.stackexchange.com/questions/16010/is-it-bad-to-use-unicode-characters-in-variable-names)
 - [Valid Identifiers in Non-Normative HTML](http://www.dcl.hpi.uni-potsdam.de/home/loewis/table-3131.html)
 - [Cons of Unicode Identifiers](http://mail.python.org/pipermail/python-3000/2007-June/008161.html)
+- [Using the conceal Vim feature with LaTeX](http://b4winckler.wordpress.com/2010/08/07/using-the-conceal-vim-feature-with-latex/)
+- [Ruby Loves Vim Conceal Too](http://ithaca.arpinum.org/2010/11/06/vim-conceal-for-ruby.html)
+- [vim-cute-python](https://github.com/ehamberg/vim-cute-python)
