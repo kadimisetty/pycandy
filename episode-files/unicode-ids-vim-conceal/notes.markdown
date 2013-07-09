@@ -1,6 +1,7 @@
+# Unicode Identifiers
 
 ## Topics 
-- Vim's conceal
+- Vim conceal
 - Python Identifiers written with Unicode Literals
 
 These Identifiers can be 
@@ -88,14 +89,13 @@ Function
 
 `__*__`
 : System Defined Names. Definited by Implementations and Interpreters
+    * example: `__name__`
 
 `__*`
 : Class-Private Names
 
 ## Screencast Order
-- Vim 
-    * Features
-    * Conceal
+- Vim Features & Conceal
 - Lexical Syntax & Identifiers
 - Unicode names for ids
 - Character Range
