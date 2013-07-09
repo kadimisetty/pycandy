@@ -2,5 +2,5 @@
 # vim: set fileencoding=utf-8:
 
 
-नाम = 'Sri Kadimisetty'
-print(नाम)
+name = 'Sri Kadimisetty'
+print(name)

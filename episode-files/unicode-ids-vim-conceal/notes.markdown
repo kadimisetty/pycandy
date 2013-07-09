@@ -61,6 +61,7 @@ Function
 ## Notes
 - For characters in ASCII range use ASCII range (U+0001..U+007F), same as Py 2.x
 - For others use the version of Unicode Cahracter Database used by the `unicodeddata` module - [UCD 6.1.0](http://www.unicode.org/Public/6.1.0/ucd/)
+
 ### Unicode Normalization
 - [Normalization](http://en.wikipedia.org/wiki/Unicode_equivalence#Normalization)
 - All identifiers are converted into the normal form NFKC while parsing; comparison of identifiers is based on NFKC.
