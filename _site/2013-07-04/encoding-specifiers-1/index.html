@@ -42,7 +42,7 @@
 </li>
 
 <li>
-<p>Magic Line / Encoding Specifiers</p>
+<p>Using a Magic Line / Encoding Specifiers</p>
 </li>
 
 <li>
@@ -83,7 +83,9 @@
 
 <h2 id='templates_in_vim'>Templates in Vim</h2>
 
-<p>Intialise files with known file formats with starter templates located in <code>~/.vim/templates/</code> autocmd BufNewFile * silent! 0r ~/.vim/templates/template.%:e</p>
+<p>Intialise files of known file formats with starter templates located in <code>~/.vim/templates/</code></p>
+
+<pre><code>    autocmd BufNewFile * silent! 0r ~/.vim/templates/template.%:e</code></pre>
 
 <p>Contents of <code>template.py</code> located in the starter template directory.</p>
 

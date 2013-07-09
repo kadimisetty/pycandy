@@ -23,7 +23,7 @@
 &lt;/li&gt;
 
 &lt;li&gt;
-&lt;p&gt;Magic Line / Encoding Specifiers&lt;/p&gt;
+&lt;p&gt;Using a Magic Line / Encoding Specifiers&lt;/p&gt;
 &lt;/li&gt;
 
 &lt;li&gt;
@@ -64,7 +64,9 @@
 
 &lt;h2 id='templates_in_vim'&gt;Templates in Vim&lt;/h2&gt;
 
-&lt;p&gt;Intialise files with known file formats with starter templates located in &lt;code&gt;~/.vim/templates/&lt;/code&gt; autocmd BufNewFile * silent! 0r ~/.vim/templates/template.%:e&lt;/p&gt;
+&lt;p&gt;Intialise files of known file formats with starter templates located in &lt;code&gt;~/.vim/templates/&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    autocmd BufNewFile * silent! 0r ~/.vim/templates/template.%:e&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Contents of &lt;code&gt;template.py&lt;/code&gt; located in the starter template directory.&lt;/p&gt;
 
