@@ -97,6 +97,7 @@ Contents of `template.py` located in the starter template directory.
 - [Pragmatic Unicode](http://nedbatchelder.com/text/unipain.html)
 - [The Updated Guide to Unicode on Python](http://lucumr.pocoo.org/2013/7/2/the-updated-guide-to-unicode/)
 - [Unicode in Python, Completely Demistified](http://farmdev.com/talks/unicode/)
+- [How ASCII Lost and Ubicode Won](http://blog.goosoftware.co.uk/2012/12/05/how-ascii-lost-and-unicode-won/)
 - [Getting Unicode right in Python - Nick's Blog](http://blog.notdot.net/2010/07/Getting-unicode-right-in-Python)
 - [Sublime Text Modelines plugin does not confirm to the required regex](https://github.com/SublimeText/Modelines)
 - [The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets - No Excuses!](http://www.joelonsoftware.com/articles/Unicode.html)

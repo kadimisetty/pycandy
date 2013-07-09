@@ -1,0 +1,146 @@
+<!-- Encoding Specifiers and Magical Mode Lines --><iframe frameborder='0' height='370' src='http://player.vimeo.com/video/69685215?title=0&amp;byline=0&amp;portrait=0&amp;color=4a8ac2' width='500'> </iframe>
+<h2 id='ways_python_infers_encoding'>Ways Python infers encoding</h2>
+
+<ol>
+<li>
+<p>Default Encodings</p>
+
+<ul>
+<li>Python 2.3+ uses 7-bit ASCII</li>
+
+<li>Python 3+ uses UTF-8</li>
+</ul>
+</li>
+
+<li>
+<p>Using a Magic Line / Encoding Specifiers</p>
+</li>
+
+<li>
+<p>Using a BOM</p>
+</li>
+</ol>
+
+<h2 id='the_magic_line_or_encoding_specifier_should'>The &#8220;Magic Line&#8221; or Encoding Specifier should</h2>
+
+<ul>
+<li>match the regular expression <code>coding[:=]\s*([-\w.]+)</code></li>
+
+<li>use encodings <a href='http://docs.python.org/3.3/library/codecs.html#standard-encodings'>supported by python</a></li>
+
+<li>not have other statement in the same line</li>
+
+<li>be listed in the first two lines</li>
+</ul>
+
+<h2 id='pattern'>Pattern</h2>
+
+<pre><code>coding=&lt;encoding&gt;
+# coding=utf-8</code></pre>
+
+<p>The regular expression:</p>
+
+<pre><code>coding[:=]\s*([-\w.]+)</code></pre>
+
+<p>Vim style modelines:</p>
+
+<pre><code>vim: set fileencoding=&lt;encoding&gt;:
+# vim: set fileencoding=utf-8:</code></pre>
+
+<p>Emacs style &#8220;modelines&#8221;</p>
+
+<pre><code>-*- coding: &lt;encoding&gt; -*-
+# -*- coding: latin-1 -*-</code></pre>
+
+<h2 id='templates_in_vim'>Templates in Vim</h2>
+
+<p>Intialise files of known file formats with starter templates located in <code>~/.vim/templates/</code></p>
+
+<pre><code>    autocmd BufNewFile * silent! 0r ~/.vim/templates/template.%:e</code></pre>
+
+<p>Contents of <code>template.py</code> located in the starter template directory.</p>
+
+<pre><code>#!/usr/bin/env python
+# vim: set fileencoding=utf-8:
+
+def main():
+    pass
+
+if __name__ == &#39;__main__&#39;:
+    main()</code></pre>
+
+<h2 id='excerpt_from_the_pragmatic_unicode_talk'>Excerpt from the <a href='http://nedbatchelder.com/text/unipain.html'>Pragmatic Unicode Talk</a></h2>
+
+<ul>
+<li>You cannot infer the encoding of <em>bytes</em>.</li>
+
+<li>Declared Encodings might be wrong.</li>
+</ul>
+
+<h2 id='relevant_documentation'>Relevant Documentation</h2>
+
+<h3 id='python'>Python</h3>
+
+<ul>
+<li><a href='http://docs.python.org/3/howto/unicode.html'>Python UNICODE howto</a></li>
+
+<li><a href='http://docs.python.org/2.7/reference/lexical_analysis.html#lexical-analysis'>2.7 Lexical analysis - 7-bit ASCII</a></li>
+
+<li><a href='http://docs.python.org/3.3/reference/lexical_analysis.html#lexical-analysis'>3.3 Lexical analysis - UTF-8</a></li>
+
+<li><a href='http://docs.python.org/3.3/library/codecs.html#standard-encodings'>3.3 - Standard Encodings</a></li>
+
+<li><a href='http://docs.python.org/3.3/reference/lexical_analysis.html#encoding-declarations'>3.3 Encoding declarations</a></li>
+
+<li><a href='http://docs.python.org/release/3.0.1/whatsnew/3.0.html#text-vs-data-instead-of-unicode-vs-8-bit'>Text Vs. Data Instead Of Unicode Vs. 8-bit</a></li>
+</ul>
+
+<h3 id='peps'>PEPs</h3>
+
+<ul>
+<li><a href='http://www.python.org/dev/peps/pep-0263/'>0263 - Defining Python Source Code Encodings</a></li>
+
+<li><a href='http://www.python.org/dev/peps/pep-3120/#specification'>3120 - Using UTF-8 as the default source encoding</a></li>
+
+<li><a href='http://www.python.org/dev/peps/pep-3131/'>3131 - Supporting Non-ASCII Identifiers</a></li>
+</ul>
+
+<h3 id='vim'>Vim</h3>
+
+<ul>
+<li><code>:help bomb</code> - Enabling BOMs</li>
+
+<li><code>:help modeline</code> - Modelines</li>
+
+<li><code>:help modelines</code> - Number of lines to check for a modeline</li>
+
+<li><code>:help &#39;modeline&#39;</code> - Toggle modeline recognition</li>
+</ul>
+
+<h2 id='further_reading'>Further Reading</h2>
+
+<ul>
+<li><a href='https://en.wikipedia.org/wiki/Byte_order_mark'>BOM</a></li>
+
+<li><a href='https://en.wikipedia.org/wiki/UTF-8'>UTF-8</a></li>
+
+<li><a href='http://en.wikipedia.org/wiki/UTF-8#Byte_order_mark'>BOM &amp; UTF-8</a></li>
+
+<li><a href='http://en.wikipedia.org/wiki/ASCII#7-bit'>7-bit ASCII</a></li>
+
+<li><a href='http://vim.wikia.com/wiki/Modeline_magic'>Modeline Magic</a></li>
+
+<li><a href='http://nedbatchelder.com/text/unipain.html'>Pragmatic Unicode</a></li>
+
+<li><a href='http://lucumr.pocoo.org/2013/7/2/the-updated-guide-to-unicode/'>The Updated Guide to Unicode on Python</a></li>
+
+<li><a href='http://farmdev.com/talks/unicode/'>Unicode in Python, Completely Demistified</a></li>
+
+<li><a href='http://blog.goosoftware.co.uk/2012/12/05/how-ascii-lost-and-unicode-won/'>How ASCII Lost and Ubicode Won</a></li>
+
+<li><a href='http://blog.notdot.net/2010/07/Getting-unicode-right-in-Python'>Getting Unicode right in Python - Nick&#8217;s Blog</a></li>
+
+<li><a href='https://github.com/SublimeText/Modelines'>Sublime Text Modelines plugin does not confirm to the required regex</a></li>
+
+<li><a href='http://www.joelonsoftware.com/articles/Unicode.html'>The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets - No Excuses!</a></li>
+</ul>
