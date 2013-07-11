@@ -47,9 +47,9 @@ Emacs style "modelines"
 ## Templates in Vim
 Intialise files of known file formats with starter templates located in `~/.vim/templates/`
 
-        autocmd BufNewFile * silent! 0r ~/.vim/templates/template.%:e
+    autocmd BufNewFile * silent! 0r ~/.vim/templates/template.%:e
 
-Contents of `template.py` located in the starter template directory.
+Contents of `template.py` located in that starter template directory.
 
     #!/usr/bin/env python
     # vim: set fileencoding=utf-8:

@@ -66,9 +66,9 @@
 
 &lt;p&gt;Intialise files of known file formats with starter templates located in &lt;code&gt;~/.vim/templates/&lt;/code&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;    autocmd BufNewFile * silent! 0r ~/.vim/templates/template.%:e&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;autocmd BufNewFile * silent! 0r ~/.vim/templates/template.%:e&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Contents of &lt;code&gt;template.py&lt;/code&gt; located in the starter template directory.&lt;/p&gt;
+&lt;p&gt;Contents of &lt;code&gt;template.py&lt;/code&gt; located in that starter template directory.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;#!/usr/bin/env python
 # vim: set fileencoding=utf-8:
@@ -145,6 +145,8 @@ if __name__ == &amp;#39;__main__&amp;#39;:
 &lt;li&gt;&lt;a href='http://lucumr.pocoo.org/2013/7/2/the-updated-guide-to-unicode/'&gt;The Updated Guide to Unicode on Python&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href='http://farmdev.com/talks/unicode/'&gt;Unicode in Python, Completely Demistified&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://blog.goosoftware.co.uk/2012/12/05/how-ascii-lost-and-unicode-won/'&gt;How ASCII Lost and Ubicode Won&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href='http://blog.notdot.net/2010/07/Getting-unicode-right-in-Python'&gt;Getting Unicode right in Python - Nick&amp;#8217;s Blog&lt;/a&gt;&lt;/li&gt;
 
