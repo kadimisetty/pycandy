@@ -1,3 +1,6 @@
 #pycandy
+Python Flavored Screencasts for impatient developers.    
+http://pycandy.com
 
-Python flavored screencasts for impatient developers
+- [Sri Kadimisetty](http://sri.io)
+
