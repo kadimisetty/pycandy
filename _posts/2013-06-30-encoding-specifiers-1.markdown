@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Encoding Specifiers and Magical Mode Lines"
-date:   2013-07-04 10:00:00
+date:   2013-07-04 06:00:00
 duration: "9"
 categories: python vim
 ---

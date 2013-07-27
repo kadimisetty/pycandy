@@ -3,3 +3,4 @@ description: Python flavored screencasts for impatient developers
 url : http://pycandy.com
 pygments: false
 permalink: /:year-:month-:day/:title
+timezone: America/Chicago
