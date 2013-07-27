@@ -6,7 +6,7 @@
 @logo: "/assets/img/masthead-logo.png";
 
 // Fonts
-@title-font: economica, 'Avenir Next Condensed', 'Helvetica Neue', Helvetica, sans-serif;
+@title-font: Economica, 'Avenir Next Condensed', 'Helvetica Neue', Helvetica, sans-serif;
 // @para-font: gentium-basic, 'Times New Roman', Palatino, serif;
 @para-font: Georgia, 'Times New Roman', Palatino, serif;
 
@@ -52,7 +52,7 @@ body {
 
     p {
         text-transform:uppercase;
-        strong { font-weight: 900;}
+        strong { font-weight: bold; /* bold is same as 700*/}
 
     }
 
@@ -146,7 +146,7 @@ body {
 
     text-align: left;
     h2, h3 {
-        font-family: economica, sans-serif;
+        font-family: @title-font;
         font-weight: normal;
         text-transform: uppercase;
         color: darken(@main-color, 5%);
