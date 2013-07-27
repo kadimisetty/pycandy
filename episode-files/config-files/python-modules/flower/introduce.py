@@ -1,10 +1,9 @@
 #!/usr/bin/env python
-# vim: set fileencoding=utf-8:
+# vim: set fileencoding=utf-8 nonumber:
 
 
 from information import user
 
 print('USER DETAILS')
-print('NAME - {}'.format(user['name']))
-print('MAIL - {}'.format(user['mail']))
-print('HTTP - {}'.format(user['http']))
+for k in user:
+    print('{} - {}'.format(k.upper(), user[k]))
