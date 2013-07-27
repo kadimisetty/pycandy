@@ -1,11 +1,5 @@
 #!/usr/bin/env python3
 # vim: set fileencoding=utf-8 nonumber:
-#
-# Example:
-# $ ./cmd_introduce.py -- name=Bender
-#                      -- mail=bender@ilovebender.com
-#                      -- http=ilovebender.com
-
 
 import sys
 
